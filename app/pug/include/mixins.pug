@@ -1,0 +1,18 @@
+mixin styles(...styles)
+	each css in styles
+		link(rel="stylesheet", href=css)
+
+mixin scripts(...scripts)
+	each js in scripts
+		script(src=js)
+
+mixin description(desc)
+	meta(name="description" content=desc)
+
+mixin keywords(keys)
+	meta(name="keywords" content=keys)
+
+mixin list(...names)
+	ul
+		each name in names 
+			li name

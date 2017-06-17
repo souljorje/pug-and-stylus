@@ -1,0 +1,26 @@
+@import 'include/mixins.styl'
+// Normalize
+normalize-css()
+// Global styles
+*
+	box-sizing: border-box
+
+*::after, *::before 
+	box-sizing: border-box
+
+.container
+	width 1170px
+	padding 0	15px
+	margin 0 auto
+	clearfix()
+	
+.col
+	&-6
+		width 50%
+		float left
+
+.row
+	margin 0 -15px
+	clearfix()
+		
+@import 'include/media.styl'

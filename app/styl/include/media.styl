@@ -1,0 +1,17 @@
+rupture.scale = 0 480px 768px 992px 1200px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
+
+
+// (max-width: 1200px)
++below('l')
+	.container
+		width 970px
+// (max-width: 992px)
++below('m')
+	.container
+		width 750px
+// (max-width: 768px)
++below('s')
+	.container
+		width 100%
+// (max-width: 480px)

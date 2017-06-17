@@ -1,0 +1,31 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "First Gulp lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Georgiy Bukharov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-tinypng-extended": "^1.5.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "nib": "^1.1.2",
+    "rupture": "^0.6.2"
+  },
+  "dependencies": {}
+}
