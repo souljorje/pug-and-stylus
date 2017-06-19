@@ -6,6 +6,8 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
 +below('l')
 	.container
 		width 970px
+	.info-content-2
+		justify-content space-around
 // (max-width: 992px)
 +below('m')
 	.container
@@ -14,4 +16,23 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
 +below('s')
 	.container
 		width 100%
+// Custom media
++below(704px)
+	.info
+		&-content
+			margin 85px auto
+		&-item
+			width auto
+			&:nth-child(4)
+				order 5
+				width auto
 // (max-width: 480px)
++below('xs')
+	.info
+		&-content
+			max-width 450px
+			margin inherit auto
+		&-item
+			&:nth-child(4)
+				order 5
+				width auto

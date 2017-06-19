@@ -1,2 +1,4 @@
 node_modules
 app/img
+.sublime-gulp.cache
+sublime-gulp.log

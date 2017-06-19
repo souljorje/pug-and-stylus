@@ -42,6 +42,7 @@ gulp.task('styles', function() {
 	return gulp.src('app/styl/*.styl')
 	.pipe(sourcemaps.init())
 	.pipe(stylus({
+		sourcemaps: true,
 		use: [rupture(), nib()],
 		import: ['nib']
 	}))

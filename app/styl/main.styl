@@ -1,26 +1,168 @@
 @import 'include/mixins.styl'
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 // Normalize
-normalize-css()
+global-reset()
+
 // Global styles
 *
 	box-sizing: border-box
+	outline: none
 
 *::after, *::before 
 	box-sizing: border-box
 
+gray = #959595
+flex-version = flex
+
+
+body
+	font-family Open Sans
+	
 .container
 	width 1170px
 	padding 0	15px
 	margin 0 auto
 	clearfix()
-	
-.col
-	&-6
-		width 50%
-		float left
 
-.row
-	margin 0 -15px
-	clearfix()
+h1, h2, h3
+	font-weight 300
+
+h1
+	font-size 3.75em
+	margin-bottom 20px
+	
+h2
+	font-size 2.1875em
+
+h3
+	font-size 1.875em
+	margin-bottom 25px
+
+h5, a
+	font-weight 600
+
+p
+	font-set(0.875em, gray)
+a
+	text-decoration none
+	color #fff
+	display block
+	&:hover
+		color gray
+// Global styles end
+
+
+// Head styles
+.head
+	background-image url(../img/backgrounds/head-bg.png)
+	min-height 1209px
+	background-position center
+	color #fff
+	.logo
+		background-image url(../img/icons/logo.png)
+		width 92px
+		height 41px
+		margin-left 30px
+		margin-top 50px
+	&-content
+		width 42%
+		min-width 242px
+		padding 0 30px
+		margin-top 300px
+		p
+			color #fff
 		
+// Head styles End
+
+// Info styles
+
+.info
+	margin-top -175px
+	padding-bottom 10%
+	&-wrap
+		display flex
+		align-items flex-end
+		justify-content space-between
+		flex-wrap wrap
+	article
+		max-width 560px
+		p
+			margin-top 25px
+	&-content
+		display flex
+		flex-wrap wrap
+		justify-content center
+		margin 85px 0
+		color #fff
+		+h2
+			margin-bottom 65px
+	&-item
+		width 33.3%
+		min-width 225px
+		padding 45px
+		&:nth-child(1)
+			background-color #f5989d
+		&:nth-child(2)
+			background-color #615f7d
+		&:nth-child(3)
+			background-image url(../img/item-1.png)
+			background-size cover
+		&:nth-child(4)
+			width 66.6%
+			background-image url(../img/item-2.png)
+			background-size cover
+		&:nth-child(5)
+			background-color #82ca9c
+		p
+			color #fff
+		a
+			margin-top 35px
+			span
+				background-image url(../img/icons/arrow.png)
+				width 14px
+				height 5px
+				display inline-block
+				vertical-align middle
+				margin-left 15px
+			&:hover span 
+				background-image url(../img/icons/arrow-g.png)
+	&-content-2
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-items center
+		article
+			width 265px
+			margin-top 30px
+// Info styles End
+
+// Power styles
+
+.power
+	background-image url(../img/backgrounds/power-bg.png)
+	background-position center
+	background-size cover
+	min-height 874px
+	color #fff
+	padding 450px 0 130px
+	p
+		color #fff
+	&-content
+		max-width 500px
+		a
+			margin-top 25px
+			span
+				background-image url(../img/icons/arrow.png)
+				width 14px
+				height 5px
+				display inline-block
+				vertical-align middle
+				margin-left 15px
+			&:hover span 
+				background-image url(../img/icons/arrow-g.png)
+				
+		
+// Power styles End
+
+
 @import 'include/media.styl'

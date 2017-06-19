@@ -16,3 +16,11 @@ mixin list(...names)
 	ul
 		each name in names 
 			li name
+
+mixin content(h, head, ...p)
+	if h
+		#{h}=head
+	else
+		p=head
+	each text in p
+		p=text
