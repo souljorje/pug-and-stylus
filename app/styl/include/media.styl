@@ -1,4 +1,4 @@
-rupture.scale = 0 480px 768px 992px 1200px
+rupture.scale = 0 480px 767px 992px 1200px
 rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
 
 
@@ -12,10 +12,26 @@ rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
 +below('m')
 	.container
 		width 750px
-// (max-width: 768px)
+// (max-width: 767px)
 +below('s')
 	.container
 		width 100%
+	.reasons-content article
+		width 100%
+	.tarif-content
+		flex-wrap wrap
+	.tarif-item
+		padding-right 55px
+	.footer-content
+		> *
+			flex-basis 100%
+	.footer
+		nav
+			max-width 440px
+			justify-content space-between
+			margin auto
+			ul
+				margin-right 0
 // Custom media
 +below(704px)
 	.info

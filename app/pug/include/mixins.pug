@@ -12,10 +12,12 @@ mixin description(desc)
 mixin keywords(keys)
 	meta(name="keywords" content=keys)
 
-mixin list(...names)
+mixin list(heading, ...names)
 	ul
+		h5=heading
 		each name in names 
-			li name
+			li
+				a(href="#")=name
 
 mixin content(h, head, ...p)
 	if h
