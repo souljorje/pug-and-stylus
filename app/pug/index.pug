@@ -12,7 +12,7 @@ block css
 	+styles('')
 	// endbuild
 	// build:css main.min.css
-	+styles('css/main.css', 'css/fonts.css')
+	+styles('css/main.css')
 	// endbuild
 
 block content
@@ -80,43 +80,45 @@ block content
 					span.arrow
 	section.reasons
 		.container
+			h2 Reasons to get onboard
 			.reasons-content
 				article
-				+content('h5', 'Web based', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
-			article
-				+content('h5', 'Perfomance', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
-			article
-				+content('h5', 'Cultular', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+					+content('h5', 'Web based', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+				article
+					+content('h5', 'Perfomance', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+				article
+					+content('h5', 'Cultular', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
 	section.tarif
 		.container
-			.tarif-item
-				span Legacy
-				+content('h3', 'Get it solo', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris')
-				button Buy now $9
-				span.apple
-				span.windows
-			.tarif-item
-				span Most popular
-				+content('h3', 'Team plan', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris')
-				button Buy now $18
-				span.apple
-				span.windows
-	footer
+			.tarif-content
+				.tarif-item
+					span.price Legacy
+					+content('h3', 'Get it solo', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris')
+					button Buy now $9
+					span.apple
+					span.windows
+				.tarif-item
+					span.price Most popular
+					+content('h3', 'Team plan', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris')
+					button Buy now $18
+					span.apple
+					span.windows
+	footer.footer
 		.container
 			.footer-content
-				+content('h5', 'Get in touch', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e commodo consequat.')
-			form
-				h5 Stay in touch
-				input(type='e-mail' placeholder='E-mail')
-				button(type='submit')
-					span
+				.footer-text
+					+content('h5', 'Get in touch', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e commodo consequat.')
+				form
+					h5 Stay in touch
+					.form-wrap
+						input(type='e-mail' placeholder='E-mail')
+						button(type='submit')
+							span
+					p We don’t send spam. Actually, who are we kiding, we’ll spam the shit out of your inbox
 			nav
-				h5 Resources
-				+list('Tour', 'Customers', 'Pricing', 'New features', 'Education')
-				h5 Features
-				+list('Tour', 'Customers', 'Pricing', 'New features', 'Education')
-				h5 How To's
-				+list('Tour', 'Customers', 'Pricing', 'New features', 'Education')
+				+list('Resources' ,'Tour', 'Customers', 'Pricing', 'New features', 'Education')
+				+list('Features', 'Tour', 'Customers', 'Pricing', 'New features', 'Education')
+				+list("How To's", 'Tour', 'Customers', 'Pricing', 'New features', 'Education')
 
 
 block scripts

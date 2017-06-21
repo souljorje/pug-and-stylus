@@ -49,6 +49,8 @@ a
 	display block
 	&:hover
 		color gray
+button
+	cursor pointer
 // Global styles end
 
 
@@ -161,8 +163,145 @@ a
 			&:hover span 
 				background-image url(../img/icons/arrow-g.png)
 				
-		
 // Power styles End
 
+// Reasons styles
 
+.reasons
+	padding 125px 0 160px
+	background-color #82ca9c
+	color #fff
+	&-content
+		@extend .info-content-2
+		padding-top 30px
+		article
+			width 30%
+			p
+				color inherit
+				margin-top 30px
+
+// Reasons styles End
+
+// Tarif styles
+
+.tarif
+	padding 100px 0 145px
+	background-color #f6f7fa
+	&-content
+		display flex
+		justify-content space-between
+	&-item
+		max-width 570px
+		min-width 300px
+		text-align left
+		padding 55px
+		padding-right 100px
+		margin auto
+		&:hover
+			background-color #fff
+			box-shadow 0px 0px 35px rgba(000, 000, 000, 0.1)
+		.price
+			font-size 0.75em
+			font-weight 600
+			text-transform uppercase
+			color #fff
+			border-radius 6px
+			display inline-block
+			padding 7px 17px
+			margin-bottom 25px
+		&:nth-child(1) .price
+			background-color #e1e1e1
+		&:nth-child(2) .price
+			background-color #bd8cbf
+		button
+			background-color #82ca9c
+			text-transform uppercase
+			color #fff
+			font-weight 600
+			padding 18px 30px
+			border-radius 5px
+			border 0
+			margin 25px 0 20px
+			display block
+			&:hover
+				background-color #91dbad
+		.apple, .windows
+			display inline-block
+			width 24px
+			height 24px
+			background-repeat no-repeat
+			margin-right 16px
+		.apple
+			background-image url(../img/icons/apple.png)
+		.windows
+			background-image url(../img/icons/windows.png)
+			
+// Tarif styles End
+
+// Footer styles
+
+.footer
+	background-color #192431
+	min-height 605px
+	padding 130px 0
+	color #f6f7fa
+	&-content
+		@extend .info-content-2
+		align-items flex-start
+		margin-bottom 28px
+		> *
+			flex-basis 45%
+		h5
+			margin-bottom 28px
+		p
+			color #f6f7fa
+	form
+		.form-wrap
+			display flex
+			position relative
+			> *
+				height 58px
+		input
+			width 85%
+			font-size 1.8em
+			padding 0 10px
+			color gray
+			font-weight 300
+			font-family Open Sans
+			border-radius 3px 0 0 3px
+			border 0
+		button
+			width 15%
+			border-radius 0 3px 3px 0
+			border 0
+			background-color #82ca9c
+			text-align center
+			&:hover
+				background-color #91dbad
+			span
+				background-image url(../img/icons/check.png)
+				width 24px
+				height 18px
+				display inline-block
+		p 
+			font-set(0.85em, #57697f)
+			margin-top 15px
+	nav
+		display flex
+		justify-content flex-start
+		ul
+			margin-right 90px
+			h5
+				margin-bottom 30px
+			li
+				margin-bottom 13px
+				a
+					font-size 0.875em
+					font-weight 400
+					cursor pointer
+		
+
+		
+
+// Footer styles End
 @import 'include/media.styl'
